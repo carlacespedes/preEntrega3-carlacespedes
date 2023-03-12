@@ -82,7 +82,6 @@ header {
   font-family: 'Poppins', sans-serif;
   font-size: 18px;
   column-gap: 5px;
-  /*cuando pueda contener las fotos hago mas gap*/
   row-gap: 9px;
   border-radius: 15%;
   padding: 10%;
@@ -152,13 +151,12 @@ main div span {
   justify-content: center; }
 
 .main-decoracion {
-  background-color: #edeae5;
   display: grid;
   width: 100%;
   height: 180vh;
   font-family: 'Poppins', sans-serif;
+  background-color: #edeae5;
   column-gap: 5px;
-  /*cuando pueda contener las fotos hago mas gap*/
   row-gap: 9px;
   padding: 8%;
   justify-content: center;
@@ -230,6 +228,7 @@ main div span {
   justify-content: center;
   align-items: center;
   row-gap: 8px;
+  column-gap: 5%;
   padding: 5%;
   grid-template-columns: repeat 3, 1 fr;
   grid-template-rows: repeat 12% 1, 1 fr;
@@ -238,45 +237,37 @@ main div span {
     text-decoration: none;
     color: #E4CD01;
     cursor: pointer; }
-
-.text-banner-fav {
-  grid-area: text-banner-fav;
-  display: grid;
-  font-size: 28px;
-  font-weight: lighter;
-  font-family: 'Poppins', sans-serif;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  gap: 3px;
-  padding: 4%; }
-
-.corazon {
-  margin: 10px 105px 10px 105px; }
-
-.foto-favuno {
-  grid-area: foto-favuno;
-  display: grid;
-  flex-direction: row;
-  align-content: center;
-  justify-content: center; }
-
-.foto-favdos {
-  grid-area: foto-favdos;
-  display: grid;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center; }
-
-.foto-favtres {
-  grid-area: foto-favtres;
-  display: grid;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center; }
-
-main div img {
-  border-radius: 15%; }
+  .main-favoritos .text-banner-fav {
+    grid-area: text-banner-fav;
+    display: grid;
+    font-size: 28px;
+    font-weight: lighter;
+    font-family: 'Poppins', sans-serif;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 3px;
+    padding: 4%; }
+  .main-favoritos .corazon {
+    margin: 10px 140px 10px 140px; }
+  .main-favoritos .foto-favuno {
+    grid-area: foto-favuno;
+    display: grid;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center; }
+  .main-favoritos .foto-favdos {
+    grid-area: foto-favdos;
+    display: grid;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; }
+  .main-favoritos .foto-favtres {
+    grid-area: foto-favtres;
+    display: grid;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; }
 
 .main-regis-media {
   display: flex;
@@ -344,6 +335,34 @@ footer {
     margin: 52px 15px 52px 15px;
     gap: 7px; }
 
+.main-indumentaria {
+  height: auto;
+  column-gap: 5px;
+  row-gap: 5px;
+  padding: 8%; }
+
+.main-decoracion {
+  background-color: #edeae5;
+  display: grid;
+  width: 100%;
+  height: 200vh;
+  row-gap: 6%; }
+
+.main-favoritos .text-banner-fav {
+  font-size: 25px; }
+
+.main-regis-media .registrarme-banner {
+  font-size: 21px;
+  margin: 10px 100px 80px 100px; }
+
+.main-regis-media .registrarme {
+  text-align: center;
+  font-size: 16px;
+  padding: 30px; }
+
+.main-regis-media .class-formu {
+  padding: 40px 250px 40px 250px; }
+
 @media (max-width: 768px) {
   .logo {
     width: 60%; }
@@ -351,6 +370,94 @@ footer {
     font-size: 14px;
     gap: 5px;
     margin: 40px 30px 50px 0px; }
+  main div span {
+    padding: 3%;
+    font-size: 14px;
+    text-align: center; }
+  main div span a {
+    text-decoration: none;
+    list-style: none;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px; }
+  /*main index*/
+  .main-index-media {
+    width: 100%;
+    height: 120vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1%; }
+    .main-index-media .img-1 {
+      position: relative;
+      right: -50px;
+      width: 280px;
+      height: 460px; }
+    .main-index-media .img-2 {
+      position: relative;
+      right: -10px;
+      width: 280px;
+      height: 460px; }
+    .main-index-media .item-2 {
+      font-size: 21px;
+      position: relative;
+      right: 170px;
+      bottom: 90px; }
+    .main-index-media .item-4 {
+      font-size: 21px;
+      position: relative;
+      right: -525px;
+      bottom: 110px; }
+  .main-indumentaria {
+    background-color: #edeae5;
+    display: grid;
+    width: 100%;
+    border-radius: 15%;
+    height: auto;
+    font-family: 'Poppins', sans-serif;
+    grid-template-columns: repeat 2, 1 fr;
+    grid-template-rows: repeat 3, 1 fr;
+    grid-template-areas: "f-uno f-dos" "f-tres f-cuatro" "f-cinco f-seis"; }
+  .main-decoracion {
+    background-color: #edeae5;
+    display: grid;
+    width: 100%;
+    height: auto;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    column-gap: 5px;
+    row-gap: 5px;
+    padding: 8%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15%;
+    grid-template-columns: repeat 2, 1 fr;
+    grid-template-rows: repeat 4, 1 fr;
+    grid-template-areas: "text-banner text-banner" "uno dos" "tres cuatro" "cinco seis"; }
+    .main-decoracion .text-banner {
+      font-size: 18px;
+      padding: 2% 0% 8% 0%; }
+  .main-regis-media .registrarme-banner {
+    font-size: 20px;
+    margin: 10px 100px 80px 100px; }
+  .main-regis-media .registrarme {
+    text-align: center;
+    font-size: 15px;
+    padding: 30px; }
+  .main-regis-media .class-formu {
+    padding: 30px 180px 30px 180px; }
+  .main-favoritos .text-banner-fav {
+    font-size: 22px; }
+  .main-favoritos .foto-favuno img {
+    width: 210px;
+    height: 360px; }
+  .main-favoritos .foto-favdos img {
+    width: 210px;
+    height: 360px; }
+  .main-favoritos .foto-favtres img {
+    width: 210px;
+    height: 360px; }
   footer {
     grid-area: footer;
     display: flex;
@@ -361,7 +468,7 @@ footer {
     align-content: center;
     justify-content: center;
     font-family: 'Poppins', sans-serif;
-    font-size: 18px; }
+    font-size: 16px; }
   .iconos-footer {
     text-decoration: none;
     list-style: none;
@@ -375,32 +482,39 @@ footer {
     text-align: left;
     color: #FFFFFF; } }
 
-/*media QUERIES 768 index/*main index y resgistracion
-.main-index-media {
+@media (max-width: 425px) {
+  .logo {
+    width: 60%; }
+  .navbar {
+    font-size: 14px;
+    gap: 5px;
+    margin: 40px 30px 50px 0px; }
+  /*main index y resgistracion*/
+  .main-index-media {
+    width: 100%;
     height: auto;
-}
-.img-1 {
-    position:relative;
-    right: -50px;
-    width: 280px;
-    height: 460px;
-}
-.img-2{
-    position:relative;
-    right: 10px;
-    width: 280px;
-    height: 460px;
-}
-.item-2{
-    font-size: 20px; 
-    position:relative;
-    right: 170px;
-    bottom: 90px;
-}
-.item-4{
-    font-size: 20px; 
-    position:relative;
-    right: -500px;
-    bottom: 110px;
-}
-*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1%; }
+    .main-index-media .img-1 {
+      position: relative;
+      right: -50px;
+      width: 180px;
+      height: 360px; }
+    .main-index-media .img-2 {
+      position: relative;
+      right: -10px;
+      width: 180px;
+      height: 360px; }
+    .main-index-media .item-2 {
+      font-size: 16px;
+      position: relative;
+      right: 170px;
+      bottom: 90px; }
+    .main-index-media .item-4 {
+      font-size: 16px;
+      position: relative;
+      right: -525px;
+      bottom: 110px; } }

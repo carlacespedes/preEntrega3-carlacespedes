@@ -5,7 +5,7 @@
     height: auto;
     font-family:'Poppins', sans-serif;
     font-size: 18px;
-    column-gap: 5px;  /*cuando pueda contener las fotos hago mas gap*/
+    column-gap: 5px;
     row-gap: 9px;
     border-radius: 15%;
     padding: 10%;
@@ -13,8 +13,7 @@
     grid-template-rows: repeat (2, 1 fr);
     grid-template-areas: 
     "f-uno f-dos f-tres"
-    "f-cuatro f-cinco f-seis"
-   ;
+    "f-cuatro f-cinco f-seis";
     div {
         a{
         &:hover{text-decoration: none;

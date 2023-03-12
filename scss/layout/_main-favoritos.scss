@@ -7,6 +7,7 @@
     justify-content:center;
     align-items: center;
     row-gap: 8px;
+    column-gap: 5%;
     padding: 5%;
     grid-template-columns: repeat (3, 1 fr);
     grid-template-rows: repeat 12% (1, 1 fr);
@@ -18,7 +19,7 @@
         &:hover{text-decoration: none;
         color:#E4CD01; 
         cursor:pointer;
-        }}}}
+        }}}
 .text-banner-fav {  
     grid-area: text-banner-fav;    
     display: grid;
@@ -32,8 +33,7 @@
     padding: 4%;
         }
 .corazon{
-
-    margin: 10px 105px 10px 105px;
+    margin: 10px 140px 10px 140px;
 }
 .foto-favuno {
     grid-area: foto-favuno;
@@ -56,6 +56,4 @@
     align-items: center;
     justify-content: center;
 }
-main div img {
-    border-radius: 15%
 }

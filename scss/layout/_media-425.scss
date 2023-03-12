@@ -1,0 +1,46 @@
+@media(max-width:425px) {
+    .logo{ 
+            width: 60%;
+            }
+            .navbar {
+                    font-size: 14px;
+                    gap: 5px;
+                    margin: 40px 30px 50px 0px;   
+            } 
+/*main index y resgistracion*/
+
+.main-index-media {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1%;
+
+.img-1 {
+    position:relative;
+    right: -50px;
+    width: 180px;
+    height: 360px;
+}
+.img-2 {
+    position:relative;
+    right: -10px;
+    width: 180px;
+    height: 360px;
+}
+.item-2 {
+    font-size: 16px; 
+    position:relative;
+    right: 170px;
+    bottom: 90px;
+}
+
+.item-4 {
+    font-size: 16px; 
+    position:relative;
+    right: -525px;
+    bottom: 110px;
+}
+}}

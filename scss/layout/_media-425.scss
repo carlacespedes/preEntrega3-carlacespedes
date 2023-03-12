@@ -1,14 +1,25 @@
-@media(max-width:425px) {
+@media (max-width:425px) {
     .logo{ 
-            width: 60%;
+            width: 50%;
+            /*margin: 5px 20px 15px 20px;*/
             }
             .navbar {
-                    font-size: 14px;
-                    gap: 5px;
-                    margin: 40px 30px 50px 0px;   
+                    font-size: 10px;
+                    gap: 4px;
+                    margin: 20px 20px 10px 20px;   
             } 
-/*main index y resgistracion*/
-
+            main div span{
+                padding: 3%;
+                font-size: 11px;
+                text-align: center;
+            }  
+            main div span a {
+                text-decoration: none;
+                list-style: none;
+                color:black;
+                font-family:'Poppins', sans-serif;
+                font-size: 10px;
+                }      
 .main-index-media {
     width: 100%;
     height: auto;
@@ -17,30 +28,180 @@
     justify-content: space-evenly;
     align-items: center;
     gap: 1%;
+    padding: 10% 0%;
 
 .img-1 {
     position:relative;
-    right: -50px;
-    width: 180px;
-    height: 360px;
+    right: -43px;
+    width: 160px;
+    height: 300px;
 }
 .img-2 {
     position:relative;
-    right: -10px;
-    width: 180px;
-    height: 360px;
+    right: 33px;
+    width: 160px;
+    height: 300px;
 }
 .item-2 {
-    font-size: 16px; 
+    font-size: 12px; 
     position:relative;
-    right: 170px;
+    right: 86px;
     bottom: 90px;
 }
 
 .item-4 {
-    font-size: 16px; 
+    font-size: 12px; 
     position:relative;
-    right: -525px;
+    right: -265px;
     bottom: 110px;
 }
+}
+.main-indumentaria {
+    background-color: #edeae5;
+    display: grid;
+    width: 100%;
+    border-radius: 15%;
+    height: auto;
+    font-family:'Poppins', sans-serif;
+    grid-template-columns: repeat (2, 1 fr);
+    grid-template-rows: repeat (3, 1 fr);
+    grid-template-areas: 
+    "f-uno f-dos"
+    "f-tres f-cuatro"
+    "f-cinco f-seis";
+    .f-uno img {
+            width: 80%;
+        }
+    .f-dos img {
+            width: 80%;
+            }
+    .f-tres img  {
+            width: 80%;
+            }
+    .f-cuatro img {
+            width: 80%;
+            }
+    .f-cinco img {
+            width: 80%;
+            }
+    .f-seis img {
+            width: 80%;
+            }
+}
+.main-decoracion {
+    background-color: #edeae5;
+    display: grid;
+    width: 100%;
+    height: auto;
+    font-family:'Poppins', sans-serif;
+    font-size: 13px;
+    column-gap: 5px;
+    row-gap: 5px;
+    padding: 8%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15%;
+    grid-template-columns: repeat (2, 1 fr);
+    grid-template-rows: repeat (4, 1 fr);
+    grid-template-areas: 
+    "text-banner text-banner"
+    "uno dos"
+    "tres cuatro"
+    "cinco seis";
+.text-banner {
+    display: grid;
+    font-size: 13px;
+    padding: 2% 0% 8% 0%;
+}
+.fotos-queries-320{ 
+    display:grid;
+    justify-items: center;
+    width: 80%;
+}
+.uno {
+    grid-area: uno;
+    display: grid;
+    justify-items: center;
+    }
+    .dos {
+    grid-area: dos;
+    display: grid;
+    justify-items: center;
+    }
+    
+    .tres { 
+    grid-area: tres;
+    display: grid;
+    justify-items: center;
+    }
+    
+    .cuatro {
+    grid-area: cuatro;
+    display: grid;
+    justify-items: center;
+    }
+    .cinco {
+    grid-area: cinco;
+    display: grid;
+    justify-items: center;
+    }
+    .seis {
+    grid-area: seis;
+    display: grid;
+    justify-items: center;
+    }
+
+}
+.main-regis-media{
+    width: auto;
+    height: auto;
+.registrarme-banner {
+    font-size: 14px;
+    margin: 50px 50px 50px 50px;  
+}
+.registrarme {
+    text-align: center;
+    font-size: 12px;
+    padding: 30px;
+}
+.class-formu {
+    padding: 40px 90px 60px 90px;
+}
+main form label {
+    font-size: 13px;
+}
+}
+.main-favoritos { 
+    width: 100%;
+    height: auto;
+    padding: 5% 0% 18%;
+    .text-banner-fav {
+        font-size: 12px;
+    }
+    .foto-favuno img {
+        width: 120px;
+        height: 230px;
+}
+    .foto-favdos img {
+        width: 120px;
+        height: 230px;
+}
+    .foto-favtres img { 
+        width: 120px;
+        height: 230px;
+}
+}
+footer {
+    display: flex;
+    width: 100%; 
+    height: auto;
+    background-color: #E4C6BD ;
+    flex-direction: row;  
+    flex-wrap: wrap;
+    font-size: 13px;
+
+}
+section ul li a img {
+    width: 18px;
+    height: 18px; 
 }}

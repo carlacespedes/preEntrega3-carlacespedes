@@ -4,7 +4,6 @@
   box-sizing: border-box; }
 
 header {
-  grid-area: header;
   display: flex;
   width: 100%;
   height: 100px;
@@ -309,7 +308,6 @@ main div span {
     font-size: 15px; }
 
 footer {
-  grid-area: footer;
   display: flex;
   width: 100%;
   height: 218px;
@@ -335,33 +333,57 @@ footer {
     margin: 52px 15px 52px 15px;
     gap: 7px; }
 
-.main-indumentaria {
-  height: auto;
-  column-gap: 5px;
-  row-gap: 5px;
-  padding: 8%; }
-
-.main-decoracion {
-  background-color: #edeae5;
-  display: grid;
-  width: 100%;
-  height: 200vh;
-  row-gap: 6%; }
-
-.main-favoritos .text-banner-fav {
-  font-size: 25px; }
-
-.main-regis-media .registrarme-banner {
-  font-size: 21px;
-  margin: 10px 100px 80px 100px; }
-
-.main-regis-media .registrarme {
-  text-align: center;
-  font-size: 16px;
-  padding: 30px; }
-
-.main-regis-media .class-formu {
-  padding: 40px 250px 40px 250px; }
+@media (max-width: 1024px) {
+  .main-index-media {
+    width: 100%;
+    height: 120vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1%; }
+    .main-index-media .img-1 {
+      position: relative;
+      right: -100px;
+      width: 310px;
+      height: 510px; }
+    .main-index-media .img-2 {
+      position: relative;
+      right: -40px;
+      width: 310px;
+      height: 510px; }
+    .main-index-media .item-2 {
+      font-size: 21px;
+      position: relative;
+      right: 140px;
+      bottom: 90px; }
+    .main-index-media .item-4 {
+      font-size: 21px;
+      position: relative;
+      right: 186px;
+      bottom: 92px; }
+  .main-indumentaria {
+    height: auto;
+    column-gap: 5px;
+    row-gap: 5px;
+    padding: 8%; }
+  .main-decoracion {
+    background-color: #edeae5;
+    display: grid;
+    width: 100%;
+    height: 200vh;
+    row-gap: 6%; }
+  .main-favoritos .text-banner-fav {
+    font-size: 25px; }
+  .main-regis-media .registrarme-banner {
+    font-size: 21px;
+    margin: 10px 100px 80px 100px; }
+  .main-regis-media .registrarme {
+    text-align: center;
+    font-size: 16px;
+    padding: 30px; }
+  .main-regis-media .class-formu {
+    padding: 40px 250px 40px 250px; } }
 
 @media (max-width: 768px) {
   .logo {
@@ -380,15 +402,15 @@ footer {
     color: black;
     font-family: 'Poppins', sans-serif;
     font-size: 16px; }
-  /*main index*/
   .main-index-media {
     width: 100%;
-    height: 120vh;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    gap: 1%; }
+    gap: 1%;
+    padding: 10% 0%; }
     .main-index-media .img-1 {
       position: relative;
       right: -50px;
@@ -446,7 +468,7 @@ footer {
     font-size: 15px;
     padding: 30px; }
   .main-regis-media .class-formu {
-    padding: 30px 180px 30px 180px; }
+    padding: 80px 180px 30px 180px; }
   .main-favoritos .text-banner-fav {
     font-size: 22px; }
   .main-favoritos .foto-favuno img {
@@ -459,10 +481,8 @@ footer {
     width: 210px;
     height: 360px; }
   footer {
-    grid-area: footer;
     display: flex;
     width: 100%;
-    background-color: #E4C6BD;
     flex-direction: row;
     flex-wrap: wrap;
     align-content: center;
@@ -484,12 +504,22 @@ footer {
 
 @media (max-width: 425px) {
   .logo {
-    width: 60%; }
+    width: 50%;
+    /*margin: 5px 20px 15px 20px;*/ }
   .navbar {
-    font-size: 14px;
-    gap: 5px;
-    margin: 40px 30px 50px 0px; }
-  /*main index y resgistracion*/
+    font-size: 10px;
+    gap: 4px;
+    margin: 20px 20px 10px 20px; }
+  main div span {
+    padding: 3%;
+    font-size: 11px;
+    text-align: center; }
+  main div span a {
+    text-decoration: none;
+    list-style: none;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-size: 10px; }
   .main-index-media {
     width: 100%;
     height: auto;
@@ -497,24 +527,241 @@ footer {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    gap: 1%; }
+    gap: 1%;
+    padding: 10% 0%; }
     .main-index-media .img-1 {
       position: relative;
-      right: -50px;
-      width: 180px;
-      height: 360px; }
+      right: -43px;
+      width: 160px;
+      height: 300px; }
     .main-index-media .img-2 {
       position: relative;
-      right: -10px;
-      width: 180px;
-      height: 360px; }
+      right: 33px;
+      width: 160px;
+      height: 300px; }
     .main-index-media .item-2 {
-      font-size: 16px;
+      font-size: 12px;
       position: relative;
-      right: 170px;
+      right: 86px;
       bottom: 90px; }
     .main-index-media .item-4 {
-      font-size: 16px;
+      font-size: 12px;
       position: relative;
-      right: -525px;
-      bottom: 110px; } }
+      right: -265px;
+      bottom: 110px; }
+  .main-indumentaria {
+    background-color: #edeae5;
+    display: grid;
+    width: 100%;
+    border-radius: 15%;
+    height: auto;
+    font-family: 'Poppins', sans-serif;
+    grid-template-columns: repeat 2, 1 fr;
+    grid-template-rows: repeat 3, 1 fr;
+    grid-template-areas: "f-uno f-dos" "f-tres f-cuatro" "f-cinco f-seis"; }
+    .main-indumentaria .f-uno img {
+      width: 80%; }
+    .main-indumentaria .f-dos img {
+      width: 80%; }
+    .main-indumentaria .f-tres img {
+      width: 80%; }
+    .main-indumentaria .f-cuatro img {
+      width: 80%; }
+    .main-indumentaria .f-cinco img {
+      width: 80%; }
+    .main-indumentaria .f-seis img {
+      width: 80%; }
+  .main-decoracion {
+    background-color: #edeae5;
+    display: grid;
+    width: 100%;
+    height: auto;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    column-gap: 5px;
+    row-gap: 5px;
+    padding: 8%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15%;
+    grid-template-columns: repeat 2, 1 fr;
+    grid-template-rows: repeat 4, 1 fr;
+    grid-template-areas: "text-banner text-banner" "uno dos" "tres cuatro" "cinco seis"; }
+    .main-decoracion .text-banner {
+      display: grid;
+      font-size: 13px;
+      padding: 2% 0% 8% 0%; }
+    .main-decoracion .fotos-queries-320 {
+      display: grid;
+      justify-items: center;
+      width: 80%; }
+    .main-decoracion .uno {
+      grid-area: uno;
+      display: grid;
+      justify-items: center; }
+    .main-decoracion .dos {
+      grid-area: dos;
+      display: grid;
+      justify-items: center; }
+    .main-decoracion .tres {
+      grid-area: tres;
+      display: grid;
+      justify-items: center; }
+    .main-decoracion .cuatro {
+      grid-area: cuatro;
+      display: grid;
+      justify-items: center; }
+    .main-decoracion .cinco {
+      grid-area: cinco;
+      display: grid;
+      justify-items: center; }
+    .main-decoracion .seis {
+      grid-area: seis;
+      display: grid;
+      justify-items: center; }
+  .main-regis-media {
+    width: auto;
+    height: auto; }
+    .main-regis-media .registrarme-banner {
+      font-size: 14px;
+      margin: 50px 50px 50px 50px; }
+    .main-regis-media .registrarme {
+      text-align: center;
+      font-size: 12px;
+      padding: 30px; }
+    .main-regis-media .class-formu {
+      padding: 40px 90px 60px 90px; }
+    .main-regis-media main form label {
+      font-size: 13px; }
+  .main-favoritos {
+    width: 100%;
+    height: auto;
+    padding: 5% 0% 18%; }
+    .main-favoritos .text-banner-fav {
+      font-size: 12px; }
+    .main-favoritos .foto-favuno img {
+      width: 120px;
+      height: 230px; }
+    .main-favoritos .foto-favdos img {
+      width: 120px;
+      height: 230px; }
+    .main-favoritos .foto-favtres img {
+      width: 120px;
+      height: 230px; }
+  footer {
+    display: flex;
+    width: 100%;
+    height: auto;
+    background-color: #E4C6BD;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 13px; }
+  section ul li a img {
+    width: 18px;
+    height: 18px; } }
+
+@media (max-width: 425px) {
+  /*.hero {
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: 14%, 1fr, 1fr; 
+    grid-template-areas:
+    "header"
+    "main"
+    "footer";      
+    .logo{
+    width: 20%
+    }*/
+  /* .navbar {
+        font-size: 8px;
+        gap: 5px;
+        margin: 40px 30px 50px 0px;   */ }
+
+/*header img {
+        width: 77px;
+        height: 77px;
+}
+.navbar {
+        display: flex;
+        font-size: 9px;
+        list-style: none;
+        gap: 5px;
+        margin: 30px 35px 50px 5px;  
+}  /*
+.logo {
+        margin: 0px 15px 5px 115px;
+        }
+main {
+        grid-area: main;
+        width: 100%;
+        height: auto;
+        background-color:  #edeae5;
+        border-radius: 20%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2% ;
+        padding: 8%; 
+}
+footer{
+        grid-area: footer;
+        display: flex;
+        width: 100%;   
+        height: 30vh;
+        background-color: #E4C6BD ;
+        flex-direction: column;  
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        font-family:'Poppins', sans-serif;
+        font-size: 12px;
+        margin: auto;
+}
+.iconos-footer {
+        text-decoration: none;
+        list-style: none;
+        align-items: center;
+}
+.texto-footer {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        text-decoration: none;
+        list-style: none;
+        text-align:left;
+        color:#FFFFFF;
+}
+.imagen-footer {
+        width: 18px;
+        height: 18px;
+
+}
+
+.img-1 {
+        right: -40px;
+        width: 190px;
+        height: 320px;
+        }
+.img-2{
+        right: -40px;
+        width: 200px;
+        height: 330px;
+}
+
+.item-2   {
+        font-size: 14px; 
+        position:relative;
+        right: -80px;
+        bottom: 100px;
+        border-radius:  10%;
+}
+.item-4 {
+        font-size: 14px; 
+        position:relative;
+        right: -90px;
+        bottom: 105px;
+        border-radius:  10%;
+}
+*/
